@@ -1,0 +1,40 @@
+@import "color.scss";
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    form {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        h2 {
+            width: 100%;
+            text-align: center;
+            font-weight: 500;
+            margin: 7px 0;
+            color: $main;
+        }
+
+        width: calc(100vw - 110px);
+        max-width: 420px;
+
+        & > div {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+
+            font-size: 17px;
+
+            input {
+                width: 100%;
+                
+                font-size: 15px;
+            }
+        }
+    }
+    
+}

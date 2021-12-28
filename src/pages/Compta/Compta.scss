@@ -1,0 +1,71 @@
+@import "color.scss";
+
+.appheader {
+    border-bottom: solid 1px $border;
+
+    margin: 0 15px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    gap: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    & > div {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+        max-width: fit-content;
+    }
+
+    h2 {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 450;
+        color: black;
+        max-width: max-content !important;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .appheader {
+
+        h2 {
+            font-size: 18px;
+        }
+
+        & > div {
+            flex-wrap: wrap;
+            align-items: flex-end;
+            gap: 8px;
+        }
+
+        &> div:first-child {
+            justify-content: flex-start;
+        }
+        
+    }
+
+    .editclient .appheader {
+
+        &> div:first-child {
+            justify-content: space-around;
+            gap: 15px;
+            p {
+                display: none;
+            }
+            
+
+            svg {
+                font-size: 25px;
+                margin: 7px;
+
+            }
+        }
+
+    }
+}

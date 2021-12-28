@@ -1,0 +1,75 @@
+@import "color.scss";
+
+.forms {
+    justify-content: center;
+    display: flex;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    h1 {
+        text-align: center;
+        color: $main !important;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    form {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        max-width: 700px;
+        width: 100%;
+        gap: 8px;
+        padding: 20px;
+        height: fit-content;
+
+        label {
+            cursor: pointer;
+        }
+
+
+
+        b {
+            font-size: 12px;
+            color: red;
+        }
+
+        div {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+        }
+
+        & > div {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        input, select {
+            padding: 3px;
+        }
+        label {
+            margin-top: 8px;
+        }
+
+        .btn {
+            margin-top: 20px;
+        }
+    }
+
+}
+
+.card-link {
+    font-size: 22px;
+    color: black;
+    text-decoration: none;
+    height: fit-content;
+    padding: 20px;
+    min-width: 200px;
+    text-align: center;
+}
+

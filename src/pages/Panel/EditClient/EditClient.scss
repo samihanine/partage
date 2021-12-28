@@ -1,0 +1,44 @@
+@import "color.scss";
+
+.editclient {
+    height: 100%;
+}
+.edit-delete, .edit-notif {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    svg {
+        font-size: 150px;
+        color: #fb5f5f;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 22px;
+        margin: 40px 0;
+    }
+
+    button {
+        font-weight: 500;
+        font-size: 17px;
+    }
+}
+
+.edit-notif {
+    gap: 30px;
+
+    label {
+        font-weight: 400;
+        font-size: 20px;
+        width: 100%;
+    }
+    textarea {
+        width: calc(100% - 5px);
+        font-size: 16px;
+    }
+}
+
+.hidden {
+    display: none;
+}

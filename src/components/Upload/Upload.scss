@@ -1,0 +1,133 @@
+@import "color.scss";
+
+.upload {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    &-body {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        height: calc(100% - 150px);
+    }
+
+    &-list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        overflow-y: scroll;
+        box-sizing: border-box;
+
+        border: none;
+        border-top: solid 1px $border;
+        padding-top: 20px;
+        
+
+        p {
+            margin: 5px;
+            font-weight: 500;
+            font-size: 16px;
+        }
+    }
+
+   &-info {
+       color: grey; 
+       text-align: center;
+   }
+
+   &-error {
+    color: $red; 
+    text-align: center;
+    }
+
+   &-success {
+    color: rgb(15, 175, 15);
+    text-align: center;
+    }
+
+
+
+    form {
+        margin: 10px;
+    }
+}
+
+.listfile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px;
+    padding-left: 10px;
+    flex-direction: row !important;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 0;
+    border: solid 1px $border;
+
+    height: 35px;
+
+    
+
+    svg {
+        font-size: 27px;
+        margin-left: 10px;
+        color: $main;
+        cursor: pointer;
+
+        &:hover {
+            color: grey;
+        }
+    }
+
+    p {
+        font-size: 16px !important;
+        margin: 0;
+        font-weight: 500;
+        color: grey;
+        text-overflow: ellipsis;
+        width: 250px;
+        padding: 0;
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+.progressbar {
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
+    border: solid 1px $border;
+
+    div {
+        height: 15px;
+        background-color: $main;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    .upload {
+
+        
+
+        &-list {
+            height: fit-content;
+            border: none;
+            border-top: solid 1px $border;
+            padding-top: 20px;
+        }
+
+        form {
+            margin: 10px;
+        }
+    }
+}

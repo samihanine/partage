@@ -1,0 +1,50 @@
+@import "color.scss";
+
+.folder {
+    box-sizing: border-box;
+    height: 150px;
+    width: 135px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+
+
+    background-color: white;
+    border-radius: 10px;
+
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    &:hover {
+      box-shadow: rgba(99, 99, 99, 0.4) 0px 2px 8px 0px;
+    }
+
+    img {
+        width: 70px;
+    }
+    
+    & > svg {
+        font-size: 70px;
+    }
+
+    & > p {
+        font-size: 14px;
+        margin: 0;
+        width: 100px;
+        height: 33px;
+        text-decoration: none; 
+        text-overflow: ellipsis; 
+        text-align: center;
+
+        display: -webkit-box;
+        max-width: 200px;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-transform: capitalize;
+    }
+
+    
+}

@@ -1,0 +1,38 @@
+@import "color.scss";
+
+.header {
+    background-color: $main;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    gap: 10px;
+    justify-content: center;
+    height: 45px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-bottom: 3px;
+
+    a {
+        color: white;
+        font-size: 15px;
+        text-decoration: none;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        justify-content: center;
+        text-align: center;
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.212);
+        }
+    }
+
+    svg {
+        font-size: 28px;
+    }
+    
+}
+
+@media (max-width: 600px) {
+
+
+}

@@ -1,0 +1,56 @@
+@import "color.scss";
+
+
+.panel-add {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 45px;
+
+    svg {
+        font-size: 70px;
+        color: $main;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        label {
+            margin-right: 10px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        input {
+            font-size: 15px;
+        }
+    }
+}
+.cardclient {
+    width: 130px;
+    height: 150px;
+    cursor: pointer;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    p {
+        margin: 0;
+        text-transform: capitalize;
+        color: $border;
+        text-align: center;
+        font-weight: 450;
+    }
+
+    svg {
+        font-size: 60px;
+        color: rgb(185, 185, 185);
+    }
+
+
+}

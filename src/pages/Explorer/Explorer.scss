@@ -1,0 +1,44 @@
+@import "color.scss";
+
+.wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+
+        gap: 20px;
+        padding: 20px;
+}
+
+
+.loading {
+    img {
+        height: 100px;
+        margin: 25px;
+    }
+}
+
+
+.folder-upload {
+    background-color: $main !important;
+    svg, p {
+        color: white;
+        font-weight: 600;
+    }
+    
+}
+
+@media (max-width: 600px) {
+
+        .wrapper {
+            display: grid !important;
+  
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: space-evenly;
+
+            div {
+                justify-self: center;
+            }
+        }
+
+}

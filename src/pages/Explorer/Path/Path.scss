@@ -1,0 +1,26 @@
+@import "color.scss";
+
+.path {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    &-card {
+        cursor: pointer;
+        background-color: #ffdb9e;
+        padding: 7px;
+        text-transform: capitalize;   
+
+        &:hover {
+            background-color: #ffdb9e;
+        }
+        
+        p {
+            margin: 0;
+            color: rgb(97, 97, 97);
+            text-align: center;
+            width: 100%;
+            font-weight: 400;
+        }
+    }
+}
